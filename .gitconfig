@@ -1,19 +1,28 @@
 [user]
 	name = stasterg
 	email = stasterg@gmail.com
-[rerere]
 [push]
+# Push to the already set upstream branch being tracked by default.
 	default = simple
 [rerere]
+# Store and reuse manual conflict resolution changes.
 	enabled = 1
 [color]
 	ui = auto
 [fetch]
+# Always prune when fetching and pulling.
 	prune = 1
 [core]
+# Exclude everything in this file. Used for general exclusions.
 	excludesfile = /home/ste/.gitignore
 [alias]
+# Show a very handy and full log format.
 	ulti-log = log --graph --oneline --decorate
 	ulti = !git ulti-log
+
+[instaweb]
+# Use the Ruby WEBRick library when creating a 'git instaweb' HTTP Server
+	httpd = webrick
+
 [credential]
 	helper = cache --timeout=7200
