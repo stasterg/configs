@@ -1,0 +1,7 @@
+# Ignore temporary generated files.
+*.tmp
+*.sw?
+
+# Ignore log error files
+*error*
+*.log
