@@ -19,6 +19,20 @@
 # Show a very handy and full log format.
 	ulti-log = log --graph --oneline --decorate
 	ulti = !git ulti-log
+# Stage the changes in a given file.
+	stage = !git add -u
+# Unstage the changes in a given file.
+	unstage = reset HEAD --
+# View the current changes in the staging area.
+	staged = diff --cached
+# Print the name of the current branch.
+	current-branch = symbolic-ref --short HEAD
+# Print the name of the current upstream tracking branch.
+	upstream = !git config --get branch.$(git current-branch).remote || echo origin
+# Create a git:// server of the current repository.
+# WARNING! This gives all users read/write access (only use on trusted networks).
+#	serve = !git daemon --reuseaddr --export-all --base-path=. --verbose ./.git
+
 
 [instaweb]
 # Use the Ruby WEBRick library when creating a 'git instaweb' HTTP Server
@@ -26,3 +40,13 @@
 
 [credential]
 	helper = cache --timeout=7200
+
+[gist]
+# Open GitHub Gist in browser after submission.
+	browse = true
+
+[help]
+# Open Git help pages in the browser as HTML.
+	format = web
+	autocorrect = 1
+
