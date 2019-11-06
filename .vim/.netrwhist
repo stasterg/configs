@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =20
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/tmp/.X11-unix'
+let g:netrw_dirhist_2='/proc/self'
+let g:netrw_dirhist_3='/home/ss/.local/share/zeitgeist'
+let g:netrw_dirhist_4='/etc/sudoers.d'
+let g:netrw_dirhist_5='/usr/share/doc/linux-headers-generic-hwe-16.04'
+let g:netrw_dirhist_6='/etc/default'
+let g:netrw_dirhist_7='/boot/grub'
+let g:netrw_dirhist_8='/var/lib/apt/lists/partial'
